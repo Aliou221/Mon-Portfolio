@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/profile/monLogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Mon Portfolio</title>
+</head>
+<body class="bg-body-tertiary">
+
+    <header class="header p-3">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo text-uppercase fs-2 fw-bold text-white">Mon Portfolio</h1>
+            <div class="mon-nav">
+                <nav class="navbar">
+                    <a class="nav-link active ms-3 me-3 text-white text-uppercase fw-semibold fs-6" href="#">Accueil</a>
+                    <a class="nav-link ms-3 me-3 text-white text-uppercase fw-semibold fs-6" href="#A_Propos">A Propos</a>
+                    <a class="nav-link ms-3 me-3 text-white text-uppercase fw-semibold fs-6" href="#Competence">Compétences</a>
+                    <a class="nav-link ms-3 me-3 text-white text-uppercase fw-semibold fs-6" href="#Realisation">Réalisations</a>
+                    <a class="nav-link ms-3 me-3 text-white text-uppercase fw-semibold fs-6" href="#Contact">Contact</a>
+                </nav>
+            </div>
+
+        
+            <div class="ma-menu" onclick="toogleMenu()">
+                <div class="bar bar-haut"></div>
+                <div class="bar bar-mi"></div>
+                <div class="bar bar-bas"></div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container py-4">
+        <div class="left-right-container row align-items-center">
+            <div class="left-container col py-5">
+                <h1 class="display-3 fw-bold text-uppercase pb-3 text-primary-emphasis">Bienvenue Sur Mon Portfolio</h1>
+                <p class="pb-3 parag text-primary-emphasis">Découvrez mon parcours et mes réalisations en tant qu'étudiant en informatique, passioné de developpement web et d'innovation technologie.</p>
+
+                <div class="my-link d-flex w-75 justify-content-between">
+                    <a href="https://aliou221.github.io/Mon_CV" class="btn btn-outline-primary w-100 p-3 ">Voir mon CV</a>
+                    <a href="#creation" class="btn btn-outline-dark w-100 p-3 ">Découvrir mes créations</a>
+                </div>
+
+            </div>
+
+            <div class="right-container w-50 col pt-4 d-flex align-items-center justify-content-center">
+                <div class="my-image w-75 rounded">
+                    <div class="image-box w-100  bg-opacity-25 rounded">
+                        <img src="img/profile/img-me.png" class="img-fluid" alt="Mon Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="apropos container py-4" id="A_Propos">
+        <h2 class="h2 pt-4 pb-3 text-primary-emphasis text-uppercase fw-bolder">A propos de moi</h2>
+        <div class="box  row rounded mb-4 w-100 justify-content-center py-3">
+
+            <div class="image-card bg-white shadow-sm border mx-3 rounded-2 p-2 col w-100 d-flex flex-column align-items-center justify-content-center">
+                <div class="profile-image w-40 bg-white"> 
+                    <img class="img-fluid w-100 image-2" src="img/profile/img-me-2.png" alt="">
+                </div>
+
+                <div class="box1">
+                    <h2 class="text-uppercase text-primary-emphasis fs-2 fw-medium py-3 text-center">Qui Suis Je ?</h2>
+                    <p class="text-center text-primary-emphasis">Je m'appelle <span class="text-uppercase text-primary fw-semibold">Aliou Cissé</span> et je suis actuellement étudiant en deuxiéme année de licence en Informatique à l'Université Iba Der Thiam de Thiès.</p> 
+                </div>
+            </div>
+
+            <div class="text-card col mx-3 w-100">
+
+                <div class="row flex-column justify-content-between h-100">
+                    
+                    <div class="col d-flex w-100 pad-0 pb-2">
+                        <div class="right-arrive img-passion bg-white shadow-sm border d-flex flex-column gap-3 p-2 w-100 rounded">
+                            <div class="d-flex gap-3">
+                                <img class="img-fluid object-fit-cover rounded  w-50PX h-50PX" src="img/divers/passion.jpg" alt="Image">
+                                <h2 class="fs-4 text-uppercase text-primary-emphasis">Passion et Objectif</h2>
+                            </div>
+                           
+                            <div class="passions">
+                                <p class="fs-6 mon-parag text-primary-emphasis">Passionné par le développement web, j'aspire à devenir développeur Full-Stack. Cette ambition me pousse à explorer et à maîtriser toutes les facettes du développement, du front-end au back-end.</p>    
+                                <button onclick="Visible()" class="btn button-plus btn-outline-primary">Voir plus...</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex w-100 pad-0 py-2">
+                        
+                        <div class="right-arrive img-passion bg-white shadow-sm border d-flex flex-column gap-3 p-2 w-100 rounded">
+                            <div class="d-flex gap-3">
+                                <img class="img-fluid object-fit-cover rounded  w-50PX h-50PX" src="img/divers/experience.jpg" alt="Image">
+                                <h2 class="fs-4 text-uppercase text-primary-emphasis">Expériences et Compétences</h2>
+                            </div>
+                           
+                            <div class="passions">
+                                <p class="fs-6 mon-parag-1 text-primary-emphasis">J'ai réalisé plusieurs projets de sites web statiques. Ces projets ont non seulement renforcé mes compétences techniques, mais ont également démontré ma capacité à mener à bien des projets de bout en bout.</p>    
+                                <button onclick="Visible_1()" class="btn button-plus btn-outline-primary">Voir plus...</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col d-flex w-100 pad-0 pb-0">
+                        
+                        <div class="right-arrive img-passion bg-white shadow-sm border d-flex flex-column gap-3 p-2 w-100 rounded">
+                          <div class="d-flex gap-3">
+                                <img class="img-fluid object-fit-cover rounded  w-50PX h-50PX" src="img/divers/vision.jpg" alt="Image">
+                                <h2 class="fs-4 text-uppercase text-primary-emphasis">Vision</h2>
+                          </div>
+                           
+                            <div class="passions">
+                                <p class="fs-6 mon-parag-2 text-primary-emphasis">Je suis enthousiaste à l'idée de continuer à développer mes compétences et de relever de nouveaux défis dans ce domaine fascinant. Mon objectif est de contribuer de manière significative à des projets innovants et de toujours chercher à apprendre et à grandir dans le monde du développement web.</p>    
+                                <button onclick="Visible_2()" class="btn button-plus btn-outline-primary">Voir plus...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container competence p-3" id="Competence">
+        <h2 class="h2 pt-4 pb-3 text-primary-emphasis text-uppercase fw-bolder">Competences</h2>
+        
+       <div class="row max-600">
+            <div class="col-6 myW100">
+                <div class="card p-3 mb-3 shadow-sm left-competence">
+                    <div class="bureautique pb-3 d-flex gap-3 align-items-center ">
+                        <div class="img-office w-50PX h-50PX">
+                            <img class="img-fluid  w-100 h-100 rounded" src="img/competence/office.png" alt="Image">
+                        </div>
+                        <h3 class="text-uppercase text-primary-emphasis fw-semibold">Bureautique</h3>
+                    </div>
+        
+                    <div class="d-flex flex-column gap-3">
+                        <div class="word-icone d-flex gap-3 align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-file-earmark-word-fill text-primary" viewBox="0 0 16 16">
+                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M5.485 6.879l1.036 4.144.997-3.655a.5.5 0 0 1 .964 0l.997 3.655 1.036-4.144a.5.5 0 0 1 .97.242l-1.5 6a.5.5 0 0 1-.967.01L8 9.402l-1.018 3.73a.5.5 0 0 1-.967-.01l-1.5-6a.5.5 0 1 1 .97-.242z"/>
+                            </svg>
+                            <div class="range"></div>
+                            <div class="h6 pt-1 text-primary-emphasis">100%</div>
+                        </div>
+            
+                        <div class="word-icone d-flex gap-3 align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-file-earmark-ppt-fill text-danger" viewBox="0 0 16 16">
+                                <path d="M8.188 10H7V6.5h1.188a1.75 1.75 0 1 1 0 3.5"/>
+                                <path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2zM7 5.5a1 1 0 0 0-1 1V13a.5.5 0 0 0 1 0v-2h1.188a2.75 2.75 0 0 0 0-5.5z"/>
+                              </svg>
+                            <div class="range-1"></div>
+                            <div class="h6 pt-1 text-primary-emphasis">80%</div>
+                        </div>
+                        
+                        <div class="word-icone d-flex gap-3 align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-file-earmark-excel-fill text-success" viewBox="0 0 16 16">
+                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M5.884 6.68 8 9.219l2.116-2.54a.5.5 0 1 1 .768.641L8.651 10l2.233 2.68a.5.5 0 0 1-.768.64L8 10.781l-2.116 2.54a.5.5 0 0 1-.768-.641L7.349 10 5.116 7.32a.5.5 0 1 1 .768-.64"/>
+                              </svg>
+                            <div class="range-2"></div>
+                            <div class="h6 pt-1 text-primary-emphasis">70%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-3 shadow-sm left-competence">
+                    <div class="bureautique pb-3 d-flex gap-3 align-items-center ">
+                        <div class="img-office w-50PX h-50PX">
+                            <img class="img-fluid  w-100 h-100 rounded" src="img/divers/outils.jpg" alt="Image">
+                        </div>
+                        <h3 class="text-uppercase text-primary-emphasis fw-semibold">Outils</h3>
+                    </div>
+        
+                    <div class="d-flex flex-column gap-3">
+                        <div class="word-icone d-flex gap-3 align-items-center">
+                            <img src="img/outils/vscode-logo.png" class="img-fluid object-fit-cover" width="40" height="40" alt="Image">
+                            <div class="range-1"></div>
+                            <div class="h6 pt-1 text-primary-emphasis">80%</div>
+                        </div>
+            
+                        <div class="word-icone d-flex gap-3 align-items-center">
+                            <img src="img/outils/github-logo.jpg" class="img-fluid object-fit-cover" width="40px" height="40px" alt="Image">
+                            <div class="range-3"></div>
+                            <div class="h6 pt-1 text-primary-emphasis">50%</div>
+                        </div>
+                        
+                        <div class="word-icone d-flex gap-3 align-items-center">
+                            <img src="img/outils/git-logo.jpeg" class="img-fluid object-fit-cover" width="40px" height="40px" alt="Image">
+                            <div class="range-3"></div>
+                            <div class="h6 pt-1 text-primary-emphasis">50%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-6 myW100">
+                <div class="card p-3 shadow-sm h-100 haut-competence">
+                    <div class="bureautique pb-3 d-flex gap-3 align-items-center ">
+                        <div class="img-office w-50PX h-50PX">
+                            <img class="img-fluid w-100 h-100 object-fit-cover rounded" src="img/competence/codingImg.jpg" alt="Image">
+                        </div>
+                        <h3 class="text-uppercase text-primary-emphasis fw-semibold">Programmation</h3>
+                    </div>
+
+                    <div class="image-wrapper">
+                        <div class="image-item item1">
+                            <button class="btn btn-secondary w-100 h-100">Bootstrap</button>
+                        </div>
+                        <div class="image-item item2">
+                            <button class="btn btn-secondary w-100 h-100">PHP</button>
+                        </div>
+                        <div class="image-item item3">
+                            <button class="btn btn-secondary w-100 h-100">C</button>
+                        </div>
+                        <div class="image-item item4">
+                            <button class="btn btn-secondary w-100 h-100">JavaScript</button>
+                        </div>
+                        <div class="image-item item5">
+                            <button class="btn btn-secondary w-100 h-100">CSS</button>
+                        </div>
+                        <div class="image-item item6">
+                            <button class="btn btn-secondary w-100 h-100">HTML</button>
+                        </div>
+                    </div>
+
+
+                    <div class="my-ranger d-flex gap-2 align-items-center">
+                        <div class="img-html pt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-html rounded-1 shadow-sm" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+                            </svg>
+                        </div>
+                        <div class="ranger-html mt-3"></div>
+                        <div class="pt-4 h6 text-primary-emphasis">100%</div>
+                    </div>
+
+                    <div class="my-ranger d-flex gap-2 align-items-center">
+                        <div class="img-css pt-3 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-css rounded-1 shadow-sm" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.397 14.841a1.13 1.13 0 0 0 .401.823q.195.162.478.252.284.091.665.091.507 0 .859-.158.354-.158.539-.44.187-.284.187-.656 0-.336-.134-.56a1 1 0 0 0-.375-.357 2 2 0 0 0-.566-.21l-.621-.144a1 1 0 0 1-.404-.176.37.37 0 0 1-.144-.299q0-.234.185-.384.188-.152.512-.152.214 0 .37.068a.6.6 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.1 1.1 0 0 0-.2-.566 1.2 1.2 0 0 0-.5-.41 1.8 1.8 0 0 0-.78-.152q-.439 0-.776.15-.337.149-.527.421-.19.273-.19.639 0 .302.122.524.124.223.352.367.228.143.539.213l.618.144q.31.073.463.193a.39.39 0 0 1 .152.326.5.5 0 0 1-.085.29.56.56 0 0 1-.255.193q-.167.07-.413.07-.175 0-.32-.04a.8.8 0 0 1-.248-.115.58.58 0 0 1-.255-.384zM.806 13.693q0-.373.102-.633a.87.87 0 0 1 .302-.399.8.8 0 0 1 .475-.137q.225 0 .398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.4 1.4 0 0 0-.489-.272 1.8 1.8 0 0 0-.606-.097q-.534 0-.911.223-.375.222-.572.632-.195.41-.196.979v.498q0 .568.193.976.197.407.572.626.375.217.914.217.439 0 .785-.164t.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.8.8 0 0 1-.118.363.7.7 0 0 1-.272.25.9.9 0 0 1-.401.087.85.85 0 0 1-.478-.132.83.83 0 0 1-.299-.392 1.7 1.7 0 0 1-.102-.627zM6.78 15.29a1.2 1.2 0 0 1-.111-.449h.764a.58.58 0 0 0 .255.384q.106.073.25.114.142.041.319.041.245 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.152-.12-.463-.193l-.618-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.527-.422t.777-.149q.456 0 .779.152.326.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.246-.181.9.9 0 0 0-.37-.068q-.324 0-.512.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .404.175l.621.143q.326.075.566.211t.375.358.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375"/>
+                            </svg>
+                        </div>
+                        <div class="ranger-css mt-3"></div>
+                        <div class="pt-4 h6 text-primary-emphasis">80%</div>
+                    </div>
+
+                    <div class="my-ranger d-flex gap-2 align-items-center">
+                        <div class="img-bootstrap pt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bootstrap rounded-1 shadow-sm" viewBox="0 0 16 16">
+                                <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z"/>
+                                <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3z"/>
+                            </svg>
+                        </div>
+                        <div class="ranger-bootstrap mt-3"></div>
+                        <div class="pt-4 h6 text-primary-emphasis">75%</div>
+                    </div>
+
+                    <div class="my-ranger d-flex gap-2 align-items-center">
+                        <div class="img-js pt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-js rounded-1 shadow-sm" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.186 15.29a1.2 1.2 0 0 1-.111-.449h.765a.58.58 0 0 0 .255.384q.105.073.249.114.143.041.319.041.246 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.151-.12-.462-.193l-.619-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.528-.422.336-.15.776-.149.457 0 .78.152.324.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.247-.181.9.9 0 0 0-.369-.068q-.325 0-.513.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .405.175l.62.143q.327.075.566.211.24.136.375.358t.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375m-3.104-.033A1.3 1.3 0 0 1 0 14.791h.765a.6.6 0 0 0 .073.27.5.5 0 0 0 .454.246q.285 0 .422-.164.138-.165.138-.466v-2.745h.79v2.725q0 .66-.357 1.005-.354.345-.984.345a1.6 1.6 0 0 1-.569-.094 1.15 1.15 0 0 1-.407-.266 1.1 1.1 0 0 1-.243-.39"/>
+                            </svg>
+                        </div>
+                        <div class="ranger-js mt-3"></div>
+                        <div class="pt-4 h6 text-primary-emphasis">60%</div>
+                    </div>
+
+                    <div class="my-ranger d-flex gap-2 align-items-center">
+                        <div class="img-c pt-3">
+                            <img src="img/competence/c-img.webp" class="img-fluid" alt="">
+                        </div>
+                        <div class="ranger-c mt-3"></div>
+                        <div class="pt-4 h6 text-primary-emphasis">60%</div>
+                    </div>
+                  
+                    <div class="my-ranger d-flex gap-2 align-items-center">
+                        <div class="img-php pt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-php rounded-1 shadow-sm" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803q.43 0 .732-.173.305-.175.463-.474a1.4 1.4 0 0 0 .161-.677q0-.375-.158-.677a1.2 1.2 0 0 0-.46-.477q-.3-.18-.732-.179m.545 1.333a.8.8 0 0 1-.085.38.57.57 0 0 1-.238.241.8.8 0 0 1-.375.082H.788V12.48h.66q.327 0 .512.181.185.182.185.522m4.48 2.666V11.85h-.79v1.626H4.153V11.85h-.79v3.999h.79v-1.714h1.682v1.714zm.703-3.999h1.6q.433 0 .732.179.3.175.46.477.158.302.158.677t-.161.677q-.159.299-.463.474a1.45 1.45 0 0 1-.733.173H8.12v1.342h-.791zm2.06 1.714a.8.8 0 0 0 .084-.381q0-.34-.184-.521-.184-.182-.513-.182h-.66v1.406h.66a.8.8 0 0 0 .375-.082.57.57 0 0 0 .237-.24Z"/>
+                            </svg>
+                        </div>
+                        <div class="ranger-php mt-3"></div>
+                        <div class="pt-4 h6 text-primary-emphasis">50%</div>
+                    </div>
+                  
+                </div>
+            </div>
+       </div>
+    </div>
+
+    <div class="container realisations py-4" id="Realisation" >
+        <h2 class="h2 pt-4 pb-3 text-primary-emphasis text-uppercase fw-bolder" id="creation">Réalisations</h2>
+        <div class="row justify-content-center py-3">
+            
+            <div class="col-lg-5 py-2 col-md-6">
+                <div class="image-realisation left-competence p-2 bg-white rounded shadow-sm h-100">
+                    <img class="img-fluid object-fit-cover rounded w-100 h-100" src="img/realisations/e-learn.png" alt="Image">
+                </div>
+            </div>
+
+            <div class="col-lg-7 py-2 col-md-6">
+                <div class="bg-white right-arrive h-100 p-3 rounded shadow-sm">
+                    <div class="text-image">
+                        <h3 class="fs-2 pb-2 text-uppercase text-primary-emphasis fw-semibold">E-Learning</h3>
+                       <p class="fs-6 text-primary-emphasis">Plteforme d'apprentissage en ligne, offrant des statistiques sur l'engagement et les performences des etudiants, avec un tableau de bord administrateur pour le suivi des cours.</p>
+                    </div>
+    
+                    <a class="link btn btn-outline-secondary p-2 mt-1" target="_blank" href="https://aliou221.github.io/E-Learning">Visitez le site</a>
+                </div>
+            </div>            
+        </div>
+
+        <div class="row colreverse justify-content-center py-3 ">
+
+            <div class="col-lg-7 py-2 col-md-6">
+                <div class="bg-white left-competence h-100 p-3 rounded shadow-sm">
+                    <div class="text-image">
+                        <h3 class="fs-2 pb-2 text-uppercase text-primary-emphasis fw-semibold">Kreatify-Website</h3>
+                       <p class="fs-6 text-primary-emphasis">Site Vitrine pour une entreprise créative, avec une interface utilisateur attrayante et réactive, présentant les services et les réalisations de l'entreprise.</p>
+                    </div>
+    
+                    <a class="link btn btn-outline-secondary p-2 mt-1" target="_blank" href="https://aliou221.github.io/kreatify-website">Visitez le site</a>
+                </div>
+            </div>
+
+            <div class="col-lg-5 py-2 col-md-6">
+                <div class="image-realisation haut-competence p-2 bg-white rounded shadow-sm h-100">
+                    <img class="img-fluid object-fit-cover rounded w-100 h-100" src="img/realisations/kreatify-2.png" alt="Image">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center py-3 ">
+            <div class="col-lg-5 py-2 col-md-6">
+                <div class="image-realisation haut-competence p-2 bg-white rounded shadow-sm h-100">
+                    <img class="img-fluid object-fit-cover rounded w-100 h-100" src="img/realisations/agence.png" alt="Image">
+                </div>
+            </div>
+
+            <div class="col-lg-7 py-2 col-md-6">
+                <div class="bg-white right-arrive h-100 p-3 rounded shadow-sm">
+                    <div class="text-image ">
+                        <h3 class="fs-2 pb-2 text-uppercase text-primary-emphasis fw-semibold">Agence de voyage</h3>
+                       <p class="fs-6 text-primary-emphasis">Site statique pour une agence de voyage, incluant des graphiques interactifs et des analyses de données pour faciliter la prise de décision.</p>
+                    </div>
+    
+                    <a class="link btn btn-outline-secondary p-2 mt-1" target="_blank" href="https://aliou221.github.io/Code_Maesrtro">Visitez le site</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="row colreverse justify-content-between py-3 ">
+
+            <div class="col-lg-7 py-2 col-md-6">
+               <div class="bg-white left-competence h-100 p-3 rounded shadow-sm">
+                <div class="text-image">
+                    <h3 class="fs-2 pb-2 text-uppercase text-primary-emphasis fw-semibold">Projet-Agriculture</h3>
+                   <p class="fs-6 text-primary-emphasis">Outils de gestion pour les agriculteurs, permettant les données des cultures et optimiser les rendements grace à des analyses précise.</p>
+                </div>
+
+                <a class="link btn btn-outline-secondary p-2 mt-3" target="_blank" href="https://aliou221.github.io/Projet_Agriculture">Visitez le site</a>
+               </div>
+            </div>
+
+            <div class="col-lg-5 py-2 col-md-6">
+                <div class="image-realisation haut-competence p-2 bg-white rounded shadow-sm h-100">
+                    <img class="img-fluid object-fit-cover rounded w-100 h-100" src="img/realisations/agriculture.png" alt="Image">
+                </div>
+            </div>
+
+            
+        </div>
+    </div>  
+
+    <footer class="pt-3 px-3" id="Contact">
+       <div class="container">
+            <h2 class="text-white text-center text-uppercase fs-1 py-3 fw-semibold">contactez-moi!</h2>
+            <p class="text-white fs-6 text-center pad pb-3">Je suis toujours à la recherche de nouvelles opportunités d'apprentissage et de collaboration. Si vous êtes intéressé par mes compétences ou si vous avez un projet en tête, n'hésitez pas à me contacter.</p>
+
+            <div class="row d-flex justify-content-center gap-3">
+                <div class="col-lg-4 col-md-6 col-sm-12  left-competence bg-body-tertiary  px-3 py-2 rounded border shadow-sm">
+                    <h2  class="text-primary-emphasis text-uppercase fs-4 text-center">e-mail</h2>
+                    <div class="image-contact d-flex flex-column align-items-center gap-3">
+                        <svg xmlns="http://www.w3.org/200 d-flex flex-column align-items-center gap-30/svg" width="35" height="35" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                            <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                        </svg>
+                        <a class="btn btn-outline-dark fs-6" href="mailto:cissealiou378@gmail.com">cissealiou378@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 haut-competence bg-body-tertiary p-2 rounded border shadow-sm">
+                    <h2 class="text-primary-emphasis text-uppercase fs-4 text-center pb-2">telephone</h2>
+                    <div class="image-contact d-flex flex-column align-items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                        </svg>
+                        <a class="btn btn-outline-dark" href="tel:+221760124302">+221 76 012 43 02</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pad-8 pt-3 d-flex justify-content-center gap-3">
+                <div class="col-lg-4 col-md-6 col-sm-12 left-competence bg-body-tertiary p-2 rounded border shadow-sm">
+                    <h2 class="text-primary-emphasis text-uppercase fs-4 text-center pb-2">Whatsapp</h2>
+                    <div class="image-contact d-flex flex-column align-items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                        </svg>
+                        <a class="btn btn-outline-dark" href="https://wa.me/772091891">+221 77 209 18 91</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 haut-competence bg-body-tertiary  p-2 rounded border shadow-sm">
+                    <h2 class="text-primary-emphasis text-uppercase fs-4 text-center  pb-2">linkedin</h2>
+                    <div class="image-contact d-flex flex-column align-items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                        </svg>
+                        <a class="btn btn-outline-dark" href="https://www.linkedin.com/in/aliou-cisse-469a37271">Linkedin</a>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+      <div class="container">
+        <p class="text-center h6 py-4 text-secondary">&copy;2024 MonPortfolio. Tous droits réservés.</p>
+      </div>
+    </footer>
+       
+    
+
+    <script src="JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>             
